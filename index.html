@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<div class="container">
+    <header>
+        <h1 id="title" class="text-center">Save Trees</h1>
+        <p id="description" class="text-center">Fill this Form</p>
+    </header>
+
+    <body>
+        <div class="form-container">
+            <form class="survey-form">
+                <div class="form-element">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="form-element">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email id"
+                        required>
+                </div>
+                <div class="form-element">
+                    <label id="number-label" for="age">Age (optional)</label>
+                    <input type="number" name="age" id="age" class="form-control" placeholder="Age" min="10" max="99">
+                </div>
+                <div class="form-element">
+                    <p id="">What is your highest level of education?</p>
+                    <select id="dropdown" name="education" class="form-control" required>
+                        <option disabled selected value>Education</option>
+                        <option value="mid-scl">Middle School</option>
+                        <option value="high-scl">High School</option>
+                        <option value="ug">Undergraduate</option>
+                        <option value="pg">Postgraduate</option>
+                        <option value="doctorate">Doctorate</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <p>Gender</p>
+                    <label class="input-radio"><input type="radio" name="gender" value="male" /> Male</label>
+                    <label class="input-radio"><input type="radio" name="gender" value="female" /> Female</label>
+                    <label class="input-radio"><input type="radio" name="gender" value="non-binary" />
+                        Non-Binary</label>
+                </div>
+                <div class="form-element">
+                    <p>What do you think is the reason for Global Warming</p>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value=""> Burning Fossil
+                        Fuels</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="deforestation"> Deforestation</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="agriculture"> Agriculture</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="industrialization"> Industrialization</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="pollution"> Pollution</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="meat-industry"> Meat Industry</label>
+                    <label class="input-checkbox"><input type="checkbox" name="reason" value="CO2"> CO<sub>2</sub> Emmisions</label> 
+                </div>
+                <div class="form-element">
+                    <p>What do you think will stop Global Warming?</p>
+                    <textarea name="comment" id="comment" class="form-control" placeholder="Your Solution..."></textarea>
+                </div>
+                <div class="form-element">
+                    <button id="submit" class="submit-button ">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</div>
+
+</html>
